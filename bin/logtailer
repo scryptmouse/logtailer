@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+
+'use strict';
+
+var Tailer = require('../lib/tailer');
+
+try {
+  ( new Tailer() ).start();
+} catch(err) {
+  console.error(err.message.red);
+
+  process.exit(1);
+}

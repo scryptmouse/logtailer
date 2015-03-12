@@ -1,0 +1,52 @@
+{
+  "name": "logtailer",
+  "description": "Tail through specifically-formatted JSON logs",
+  "version": "0.1.0",
+  "homepage": "https://github.com/scryptmouse/logtailer",
+  "author": {
+    "name": "Alexa Grey",
+    "email": "devel@mouse.vc"
+  },
+  "bin": {
+    "logtailer": "./bin/logtailer"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/scryptmouse/logtailer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/scryptmouse/logtailer/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/scryptmouse/logtailer/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/tailer",
+  "engines": {
+    "node": ">= 0.10.28"
+  },
+  "scripts": {
+    "test": "grunt nodeunit"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt": "~0.4.5"
+  },
+  "keywords": ["logs", "json", "tail"],
+  "preferGlobal": true,
+  "dependencies": {
+    "colors": "^1.0.3",
+    "indent": "0.0.1",
+    "lazy-property": "^1.0.0",
+    "lodash": "^3.5.0",
+    "nconf": "^0.7.1",
+    "sprintf": "^0.1.5",
+    "tail": "^0.4.0",
+    "touch": "0.0.3",
+    "wordwrap": "0.0.2"
+  }
+}
